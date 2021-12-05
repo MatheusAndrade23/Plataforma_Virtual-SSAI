@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+
+<hmtl lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <title>SSAI</title>
+        <meta name="viewport" content="width = device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/4a2bd376bd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+
+    </head>
+
+    <body>
+        <div class="funcionamento">
+            <div class="main">
+                <header id="header">
+                    <span class="ssai ssai2">SSAI</span>
+                    <button id="side">Assuntos
+                        <span id="hamburguerside"></span>
+                    </button>
+                    <span class="ssai">SSAI</span>
+                    <h2 class="titulo">Simulações</h2>
+                    <nav id="nav">
+                        <button id="btn-mobile">Menu
+                            <span id="hamburguer"></span>
+                        </button>
+
+                        <ul id="menu">
+                            <li><button class="m exerper">Simulação Personalizada</button></li>
+                            <li><button class="m configmenu">Painel de Ajuda</button></li>
+                            <li><button class="sair">Sair</button></li>
+                        </ul>
+                    </nav>
+                    <button class="voltarinit">Voltar</button>
+                </header>
+
+                <main id="main">
+                    <div id="sidebar">
+                        <ul class="listaexer">
+                            <li class="assunto"><span>Assuntos</span></li>
+                            <li><button class="destacar" id="e">Lógicas OU/E</button></li>
+                            <li><button class="bot" id="latch">Latch/Unlatch</button></li>
+                            <li><button class="bot" id="temp">Temporizador</button></li>
+                            <li><button class="bot" id="cont">Contador</button></li>
+                            <li><button class="bot" id="vari">Variáveis</button></li>
+                        </ul>
+                        <div class="funcionalidade">
+                            <a href="arquivos/Enunciados.pdf" download="Enunciados.pdf" type="application/pdf"
+                                id="baixarbot">Baixar Enunciados</a>
+                            <button id="histbot">Histórico</button>
+                        </div>
+                    </div>
+
+                    <div class="historico">
+                        <span class="assunto">Histórico</span>
+                        <div class="mostrarhist">
+                            <h2 class="histtitle">Relatório das simulações</h2>
+                            <!-- <p class="divisao">________</p> -->
+                            <p class="aluno">Aluno:____________________________</p>
+                            <p class="aluno">Turma:___________________________</p>
+                            <p class="divisao2">---</p>
+                        </div>
+                        <div class="divrelat">
+                            <button class="relat" id="gerar">Relatório</button>
+                            <button class="vhist">Voltar</button>
+                        </div>
+                    </div>
+
+                    <!-- ---------------------------------------------------- -->
+
+                    <div class="seção e">
+
+                        <div class="colu se1">
+                            <p class="subti nivl">Nível 1</p>
+                            <button class="simular e1">Simular</button>
+                            <p class="contagem ce1">0</p>
+                        </div>
+                        <div class="colu result ae1">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="re1">Simulando...</p>
+                            <div class="loading" id="le1"></div>
+                            <button class="voltarava" id="vre1">Voltar</button>
+                        </div>
+
+                        <div class="colu se2">
+                            <p class="subti nivl">Nível 2</p>
+                            <button class="simular e2">Simular</button>
+                            <p class="contagem ce2">0</p>
+                        </div>
+                        <div class="colu result ae2">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="re2">Simulando...</p>
+                            <div class="loading" id="le2"></div>
+                            <button class="voltarava" id="vre2">Voltar</button>
+                        </div>
+
+
+
+                        <div class="colu se3">
+                            <p class="subti nivl">Nível 3</p>
+                            <button class="simular e3">Simular</button>
+                            <p class="contagem ce3">0</p>
+                        </div>
+                        <div class="colu result ae3">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="re3">Simulando...</p>
+                            <div class="loading" id="le3"></div>
+                            <button class="voltarava" id="vre3">Voltar</button>
+                        </div>
+
+
+                        <div class="colu se4">
+                            <p class="subti nivl">Nível 4</p>
+                            <button class="simular e4">Simular</button>
+                            <p class="contagem ce4">0</p>
+                        </div>
+                        <div class="colu result ae4">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="re4">Simulando...</p>
+                            <div class="loading" id="le4"></div>
+                            <button class="voltarava" id="vre4">Voltar</button>
+                        </div>
+
+                        <div class="colu se5">
+                            <p class="subti nivl">Nível 5</p>
+                            <button class="simular e5">Simular</button>
+                            <p class="contagem ce5">0</p>
+                        </div>
+                        <div class="colu result ae5">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="re5">Simulando</p>
+                            <div class="loading" id="le5"></div>
+                            <button class="voltarava" id="vre5">Voltar</button>
+                        </div>
+
+
+                    </div>
+                    <!-- ------------------------------------------------ -->
+                    <div class="seção latch">
+                        <div class="colu sl1">
+                            <p class="subti nivl">Nível 1</p>
+                            <button class="simular l1">Simular</button>
+                            <p class="contagem cl1">0</p>
+                        </div>
+                        <div class="colu result al1">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rl1">Simulando</p>
+                            <div class="loading" id="ll1"></div>
+                            <button class="voltarava" id="vrl1">Voltar</button>
+                        </div>
+
+                        <div class="colu sl2">
+                            <p class="subti nivl">Nível 2</p>
+                            <button class="simular l2">Simular</button>
+                            <p class="contagem cl2">0</p>
+                        </div>
+                        <div class="colu result al2">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rl2">Simulando</p>
+                            <div class="loading" id="ll2"></div>
+                            <button class="voltarava" id="vrl2">Voltar</button>
+                        </div>
+
+                        <div class="colu sl3">
+                            <p class="subti nivl">Nível 3</p>
+                            <button class="simular l3">Simular</button>
+                            <p class="contagem cl3">0</p>
+                        </div>
+                        <div class="colu result al3">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rl3">Simulando</p>
+                            <div class="loading" id="ll3"></div>
+                            <button class="voltarava" id="vrl3">Voltar</button>
+                        </div>
+
+                        <div class="colu sl4">
+                            <p class="subti nivl">Nível 4</p>
+                            <button class="simular l4">Simular</button>
+                            <p class="contagem cl4">0</p>
+                        </div>
+                        <div class="colu result al4">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rl4">Simulando</p>
+                            <div class="loading" id="ll4"></div>
+                            <button class="voltarava" id="vrl4">Voltar</button>
+                        </div>
+
+                        <div class="colu sl5">
+                            <p class="subti nivl">Nível 5</p>
+                            <button class="simular l5">Simular</button>
+                            <p class="contagem cl5">0</p>
+                        </div>
+                        <div class="colu result al5">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rl5">Simulando</p>
+                            <div class="loading" id="ll5"></div>
+                            <button class="voltarava" id="vrl5">Voltar</button>
+                        </div>
+                    </div>
+
+                    <!-- ------------------------------------------------- -->
+
+                    <div class="seção temp">
+                        <div class="colu st1">
+                            <p class="subti nivl">Nível 1</p>
+                            <button class="simular t1">Simular</button>
+                            <p class="contagem ct1">0</p>
+                        </div>
+                        <div class="colu result att1">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rt1">Simulando</p>
+                            <div class="loading" id="lt1"></div>
+                            <button class="voltarava" id="vrt1">Voltar</button>
+                        </div>
+
+                        <div class="colu st2">
+                            <p class="subti nivl">Nível 2</p>
+                            <button class="simular t2">Simular</button>
+                            <p class="contagem ct2">0</p>
+                        </div>
+                        <div class="colu result att2">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rt2">Simulando</p>
+                            <div class="loading" id="lt2"></div>
+                            <button class="voltarava" id="vrt2">Voltar</button>
+                        </div>
+
+                        <div class="colu st3">
+                            <p class="subti nivl">Nível 3</p>
+                            <button class="simular t3">Simular</button>
+                            <p class="contagem ct3">0</p>
+                        </div>
+                        <div class="colu result att3">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rt3">Simulando</p>
+                            <div class="loading" id="lt3"></div>
+                            <button class="voltarava" id="vrt3">Voltar</button>
+                        </div>
+
+                        <div class="colu st4">
+                            <p class="subti nivl">Nível 4</p>
+                            <button class="simular t4">Simular</button>
+                            <p class="contagem ct4">0</p>
+                        </div>
+                        <div class="colu result att4">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rt4">Simulando</p>
+                            <div class="loading" id="lt4"></div>
+                            <button class="voltarava" id="vrt4">Voltar</button>
+                        </div>
+
+                        <div class="colu st5">
+                            <p class="subti nivl">Nível 5</p>
+                            <button class="simular t5">Simular</button>
+                            <p class="contagem ct5">0</p>
+                        </div>
+                        <div class="colu result att5">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rt5">Simulando</p>
+                            <div class="loading" id="lt5"></div>
+                            <button class="voltarava" id="vrt5">Voltar</button>
+                        </div>
+                    </div>
+
+                    <!-- ---------------------------------------------------------------- -->
+
+                    <div class="seção cont">
+                        <div class="colu sc1">
+                            <p class="subti nivl">Nível 1</p>
+                            <button class="simular c1">Simular</button>
+                            <p class="contagem cc1">0</p>
+                        </div>
+                        <div class="colu result ac1">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rc1">Simulando</p>
+                            <div class="loading" id="lc1"></div>
+                            <button class="voltarava" id="vrc1">Voltar</button>
+                        </div>
+
+                        <div class="colu sc2">
+                            <p class="subti nivl">Nível 2</p>
+                            <button class="simular c2">Simular</button>
+                            <p class="contagem cc2">0</p>
+                        </div>
+                        <div class="colu result ac2">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rc2">Simulando</p>
+                            <div class="loading" id="lc2"></div>
+                            <button class="voltarava" id="vrc2">Voltar</button>
+                        </div>
+
+                        <div class="colu sc3">
+                            <p class="subti nivl">Nível 3</p>
+                            <button class="simular c3">Simular</button>
+                            <p class="contagem cc3">0</p>
+                        </div>
+                        <div class="colu result ac3">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rc3">Simulando</p>
+                            <div class="loading" id="lc3"></div>
+                            <button class="voltarava" id="vrc3">Voltar</button>
+                        </div>
+
+                        <div class="colu sc4">
+                            <p class="subti nivl">Nível 4</p>
+                            <button class="simular c4">Simular</button>
+                            <p class="contagem cc4">0</p>
+                        </div>
+                        <div class="colu result ac4">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rc4">Simulando</p>
+                            <div class="loading" id="lc4"></div>
+                            <button class="voltarava" id="vrc4">Voltar</button>
+                        </div>
+
+                        <div class="colu sc5">
+                            <p class="subti nivl">Nível 5</p>
+                            <button class="simular c5">Simular</button>
+                            <p class="contagem cc5">0</p>
+                        </div>
+                        <div class="colu result ac5">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rc5">Simulando</p>
+                            <div class="loading" id="lc5"></div>
+                            <button class="voltarava" id="vrc5">Voltar</button>
+                        </div>
+
+                    </div>
+
+                    <!-- ------------------------------------------------------------------ -->
+
+                    <div class="seção vari">
+                        <div class="colu sv1">
+                            <p class="subti nivl">Nível 1</p>
+                            <button class="simular v1">Simular</button>
+                            <p class="contagem cv1">0</p>
+                        </div>
+                        <div class="colu result av1">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rv1">Simulando</p>
+                            <div class="loading" id="lv1"></div>
+                            <button class="voltarava" id="vrv1">Voltar</button>
+                        </div>
+
+                        <div class="colu sv2">
+                            <p class="subti nivl">Nível 2</p>
+                            <button class="simular v2">Simular</button>
+                            <p class="contagem cv2">0</p>
+                        </div>
+                        <div class="colu result av2">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rv2">Simulando</p>
+                            <div class="loading" id="lv2"></div>
+                            <button class="voltarava" id="vrv2">Voltar</button>
+                        </div>
+
+                        <div class="colu sv3">
+                            <p class="subti nivl">Nível 3</p>
+                            <button class="simular v3">Simular</button>
+                            <p class="contagem cv3">0</p>
+                        </div>
+                        <div class="colu result av3">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rv3">Simulando</p>
+                            <div class="loading" id="lv3"></div>
+                            <button class="voltarava" id="vrv3">Voltar</button>
+                        </div>
+
+                        <div class="colu sv4">
+                            <p class="subti nivl">Nível 4</p>
+                            <button class="simular v4">Simular</button>
+                            <p class="contagem cv4">0</p>
+                        </div>
+                        <div class="colu result av4">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rv4">Simulando</p>
+                            <div class="loading" id="lv4"></div>
+                            <button class="voltarava" id="vrv4">Voltar</button>
+                        </div>
+
+                        <div class="colu sv5">
+                            <p class="subti nivl">Nível 5</p>
+                            <button class="simular v5">Simular</button>
+                            <p class="contagem cv5">0</p>
+                        </div>
+                        <div class="colu result av5">
+                            <p class="subti resulta">Resultado:</p>
+                            <p class="subti resultado" id="rv5">Simulando</p>
+                            <div class="loading" id="lv5"></div>
+                            <button class="voltarava" id="vrv5">Voltar</button>
+                        </div>
+                    </div>
+
+                    <!-- ------------------------------------------------------------------ -->
+
+                    <!-- <div class="config">
+                <span class="con">Configurações</span>
+                <button class="senha" id="s">Redefinir Senha</button> 
+
+                <div class="ctzredefinir">
+                    <input type ="password" placeholder="Nova Senha" class="caixa" id="redefinir">
+                    <button class="simrede">Redefinir</button>
+                    <button class="prosseguir">Prosseguir</button>
+                    <button class="cancelarrede">Cancelar</button>
+                </div>
+                <button class="apagar" id="ac">Apagar Conta</button> 
+                <div class="ctzapa">
+                    <button class="simapa">Continuar</button>
+                    <button class="cancelarapa">Cancelar</button>
+                </div>
+                <button class="voltar">Voltar</button>
+            </div> -->
+
+                    <div class="help painel">
+                        <div class="ajudas">
+                            <button class="helpes help1">Informações Gerais</button>
+                            <button class="helpes help2">Conectar o Hardware à Rede</button>
+                            <button class="helpes help3">Instalação do Produto</button>
+                        </div>
+
+                        <div class="ajudas tlinha">
+                            <button class="helpes help4">Executar uma Simulação Pré-Definida</button>
+                            <button class="helpes help5">Personalização de uma Simulação</button>
+                            <button class="helpes help6">Ver Histórico e Baixar Enunciados</button>
+                        </div>
+                    </div>
+
+                    <div class="helpess help2s">
+                        <h2>Conectar o Hardware à Rede</h2>
+                        <p class="center">Para conectar o hardware à rede, siga os passos:</p>
+                        <p class="center">O LED azul do ESP-32 deve estar piscando, o que indica que ele ainda não está
+                            conectado.</p>
+                        <img src="arquivos/espiscando.gif" class="imgmenor">
+                        <p class="center">Abra a aba de Wifi do seu computador, conecte ao "SSAI" e essa página abrirá:
+                        </p>
+                        <img src="arquivos/wifissai.png" class="imgvertical">
+                        <img src="arquivos/telaconfig.png" class="imgajuda">
+                        <p class="center">Depois, clique em "Configure Wifi".</p>
+                        <img src="arquivos/clicarconfig.png" class="imgajuda">
+                        <p>Quando a outra página for aberta, selecione a qual rede de Wifi o ESP-32 será conectado e
+                            coloque sua senha nos respectivos campos.
+                            Para exemplificar, o conectaremos no Wifi da escola:
+                        </p>
+                        <img src="arquivos/etealunos.png" class="imgpequena">
+                        <p>E a seguinte indicação aparecerá, podendo indicar falha ou sucesso. Caso tenha dado certo, o
+                            LED azul do ESP-32 terá parado de piscar. Caso algo tenha dado errado, volte e repita o
+                            processo.</p>
+                        <img src="arquivos/issuai.png" class="imgpequena">
+                        <p class="subtitle">Pronto! Agora o Hardware está conectado à internet!</p>
+                        <button class="ante ant2">Voltar</button>
+
+                    </div>
+                    <div class="helpess help1s">
+                        <h2>Informações Gerais</h2>
+                        <p class="bemvindo">Bem vindo(a) à plataforma virtual do SSAI!</p>
+                        <p>O SSAI é um sistema capaz de simular os sinais dos sensores
+                            mais comumente na indústria, tanto os discretos quanto os analógicos (0 a 10Vdc e 4 a 20mA)
+                            que estimulam o CLP, cujos sinais de resposta são analisados por outro circuito. Assim, é
+                            possível verificar se seu comportamento
+                            em determinado cenário está correto.</p>
+                        <p>O sistema é capaz de realizar simulações pré-definidas divididas em 5 níveis para cada um dos
+                            5 assuntos diferentes,
+                            totalizando assim, 25 simulações disponíveis. Depois da execução de cada uma delas, um
+                            resultado é gerado e mostrado na tela. Além disso, a personalização de uma simulação é
+                            possível,
+                            te dando a possibilidade de adequar o uso do produto à sua realidade.</p>
+                        <p>Ele oferece vantagens como:</p>
+                        <p class="vantagem">- Versatilidade</p>
+                        <p class="vantagem">- Velocidade</p>
+                        <p class="vantagem">- Segurança</p>
+                        <p class="vantagem">- Menor Custo</p>
+                        <p class="vantagem">- Simples Instalação e Uso</p>
+                        <p>Com ele, é possível prover um ensino técnico industrial de qualidade, onde os alunos aprendem
+                            na prática como
+                            programar e utilizar o CLP de forma ideal ou verificar se a implementação de uma lógica que
+                            será usada em ambiente industrial
+                            está correta!
+                        </p>
+                        <p class="esteprojeto">Este projeto foi desenvolvido para a 41° edição da <a
+                                href="https://www.etefmc.com.br/projete2020" class="linkprojete">PROJETE</a> pelos
+                            alunos:</p>
+                        <p class="nomes"><i class="fas fa-chess-rook torre"></i> Christian Salles Castilho</p>
+                        <p class="nomes"><i class="fas fa-chess-rook torre"></i> Matheus Dionísio Teixeira Andrade</p>
+                        <p class="nomes"><i class="fas fa-chess-rook torre"></i> Rafael Areias Silveira</p>
+                        <p class="nomes"><i class="fas fa-chess-rook torre"></i> Virgínia Maria Santos de Oliveira</p>
+                        <p>Orientador: Humberto José Gonzaga</p>
+                        <p>Equipe: 3013E</p>
+                        <h2>Hardware</h2>
+                        <p>O Hardware está contido em uma caixa de 16cm x 18cm x 8cm, onde os bornes enumerados de
+                            "Chave 1" até "Chave 5" e "0 a 10V" e "4 a 20mA"
+                            são suas saídas e os enumerados de "Relé 1" até "Relé 4" são suas entradas, os quais devem
+                            ser conectados
+                            ao CLP de acordo com a necessidade de cada simulação executada. Internamente, possui duas
+                            placas de impresso,
+                            uma para a fonte de 12V simétricos e 5V e outra para o circuito principal do projeto.
+                        </p>
+                        <p>O microcontrolador usado é o ESP-32, o qual possui o recurso de DAC (Digital to Analog
+                            Converter), que é fundamental para o projeto.
+                            Além disso, ele conta com um módulo Wifi integrado, facilitando a comunicação com a
+                            plataforma virtual.
+                        </p>
+                        <img src="arquivos/caixacima.png" class="imgvertical">
+                        <img src="arquivos/caixalado.png" class="imgvertical">
+                        <p class="endemail">Email para contato: projeto.ssai.21@gmail.com</p>
+                        <p class="agradecemos">Agradecemos pela confiança e desejamos um bom uso!</p>
+                        <button class="ante ant1">Voltar</button>
+                    </div>
+                    <div class="helpess help4s">
+                        <h2>Executar uma Simulação Pré-Definida</h2>
+                        <p>Primeiro, deve-se selecionar um dos assuntos disponíveis no menu lateral. Para exemplificar,
+                            será selecionado o assunto "Lógicas OU/E".</p>
+                        <img src="arquivos/selecionarexer.png" class="imgajuda">
+                        <p class="center">Depois, clique no botão "Simular" que está no nível requerido. Para
+                            exemplificar, simularemos o nível 3.</p>
+                        <img src="arquivos/simularnivel3.png" class="imgajuda">
+                        <p>Após isso, o sistema verificará se o hardware está conectado à rede antes de prosseguir. Se
+                            ele não responder em 5 segundos ou menos, a ação é cancelada.
+                            Mas se o hardware responder no tempo delimitado, a simulação será iniciada e o campo em que
+                            o resultado será exibido vai aparecer:</p>
+                        <img src="arquivos/apareceucampo2.png" class="imgajuda">
+                        <p class="center">Posteriormente, quando o resultado for recebido, ele aparecerá e substituirá o
+                            "Simulando":</p>
+                        <img src="arquivos/apareceuresultado.png" class="imgajuda">
+                        <p class="subtitle">Pronto! Agora você pode voltar e realizar outra simulação!</p>
+                        <button class="ante ant4">Voltar</button>
+                    </div>
+
+                    <div class="helpess help5s">
+                        <h2>Personalização de uma Simulação</h2>
+                        <p>Antes de partir para a personalização, é necessário conhecer as limitações do hardware, que
+                            são: Há um limite de 5 entradas (ler os sinais de resposta) e 5 saídas (simular um nível
+                            lógico) digitais e 2
+                            saídas analógicas, uma para 0 a 10Vdc e outra para 4 a 20mA. As saídas, portanto, são
+                            indicadas pela numeração de "Chave 1 até "Chave 5", para digitais, "0 a 10V" e "4 a 20mA",
+                            para analógicos.
+                            Já as entradas, são enumeradas de "Relé 1" até "Relé 4", sendo todas digitais.
+
+                        </p>
+                        <p>Partindo para o que interessa, para personalizar uma simulação, primeiro clique em "Simulação
+                            Personalizada":</p>
+                        <img src="arquivos/selecionarpersonalizar.png" class="imgajuda">
+                        <p class="center">Depois, vá em "Personalizar uma Simulação".</p>
+                        <img src="arquivos/clicarpersonalizar.png" class="imgajuda">
+                        <p class="center">E este é o ambiente de personalização.</p>
+                        <img src="arquivos/ambiente.png" class="imgajuda">
+                        <p>Agora, clique no blocos que correspondem à lógica ideal para seu projeto. A lógica de cada
+                            bloco será
+                            executada na ordem em que os blocos forem colocados.
+                        </p>
+                        <img src="arquivos/selecionarblocos.png" class="imgajuda">
+                        <p class="center">Você também pode aumentar o número de entradas e saídas de cada bloco, apenas
+                            clicando no "+".</p>
+                        <img src="arquivos/aumentarsaida.png" class="imgajuda">
+                        <p>Depois, é necessário que coloque as portas (1 a 5 para entradas e 1 a 7 para saídas) e os
+                            níveis lógicos (0 ou 1 para digitais e de 0 a 10 ou de 4 a 20 para analógios).
+                            Se um valor diferente de 0 e 1 para os digitais ou diferente de 0 a 10 ou 4 a 20 para os
+                            analógicos for digitado, o sistema automaticamente o trocará pelo valor 0 durante a
+                            compilação.
+                        </p>
+                        <img src="arquivos/porportas.png" class="imgajuda">
+                        <p>Agora, você deve escolher um código para essa personalização, que deve ser diferente de 0,
+                            11, 12
+                            , 13, 14, 15, 21, 22, 23, 24, 25, 31, 32, 33, 34, 35, 41, 42, 43, 44, 45, 51, 52, 53, 54, 55
+                            e 0, pois esses códigos
+                            já são usados pelo sistema. Em seguida, clique em "Compilar".</p>
+                        <img src="arquivos/colocarcodigo.png" class="imgajuda">
+                        <img src="arquivos/clicarcompilar.png" class="imgajuda">
+                        <p class="center">E para finalizar, clique em "voltar" e veja que o atalho para a simulação de
+                            seu exercício está disponível.</p>
+                        <img src="arquivos/apareceuatalho.png" class="imgajuda">
+                        <p>A execução destas simulações são iguais as das pré-definidas! Se quiser saber como funcionam,
+                            volte para
+                            o painel de ajuda e clique em "Executar uma Simulação Pré-Definida".
+                        </p>
+                        <p>As personalizações ficam salvas no banco de dados, então mesmo que você reinicie a página,
+                            elas ainda estarão lá.</p>
+                        <p>E para excluir as pesonalizações feitas, clique em "Excluir Simulações".</p>
+                        <img src="arquivos/clicarexcluir.png" class="imgajuda">
+                        <p class="subtitle">Pronto, agora você é capaz de personalizar uma simulação de acordo com a sua
+                            necessidade!</p>
+                        <button class="ante ant5">Voltar</button>
+                    </div>
+                    <div class="helpess help6s">
+                        <h2>Ver Histórico e Baixar Enunciados</h2>
+                        <p>Um histórico das simulações executadas desde o início página é disponibilizado, contendo o
+                            assunto, nível e resultado de cada uma delas. Para acessá-lo, vá para a tela
+                            inicial e clique em "Histórico".
+                        </p>
+                        <img src="arquivos/historico2.png" class="imgajuda">
+                        <p>Veja um exemplo de como cada execução é mostrada, usando uma simulação do assunto Lógicas
+                            OU/E do nível 3 e um resultado de 84% certo para exemplificar.</p>
+                        <img src="arquivos/exemploresultado.png" class="imgajuda">
+                        <p>E, para cada uma das simulações pré-definidas, existe um "enunciado", para que, caso um
+                            professor(a) de ensino
+                            técnico adquira o produto, ele(a) possa disponibilizá-lo para o aluno e executar sua
+                            respectiva simulação,
+                            assim, uma avaliação pode ser realizada. Para baixar o arquivo em formato pdf contendo todos
+                            os enunciados, vá para a página inicial e clique em "Baixar Enunciados".</p>
+                        <img src="arquivos/baixar.png" class="imgajuda">
+                        <button class="ante ant6">Voltar</button>
+                    </div>
+                    <div class="helpess help3s">
+                        <h2>Instalação do Produto</h2>
+                        <p>Primeiramente, o cabo de alimentação deve ser colocado na tomada e o inerruptor deve ser
+                            colocado na posição de "Ligado".</p>
+                        <p>Depois, as entradas e saídas devem ser conectadas ao CLP. </p>
+                        <p>Os bornes indicados por "Chave" podem ser conectados diretamente às entradas do CLP, já que,
+                            quando acionados,
+                            possuem um potencial de 24Vdc. No nosso caso, aproveitaremos a bancada didática da ETE para
+                            fazer a conexão.</p>
+                        <img src="arquivos/entradadiscreta.png" class="imgmenor">
+                        <p class="center">Os bornes indicados por "0 a 10V" e "4 a 20mA" devem ser conectados ao módulo
+                            de entrada analógica do CLP.</p>
+                        <img src="arquivos/moduloanalogico.png" class="imgvertical">
+                        <p>Já os bornes indicados por "Relé" devem conectados às saídas so CLP, porém, necessitam de que
+                            relés sejam conectado ao CLP para intermediar a conexão.</p>
+                        <img src="arquivos/saidarele.png" class="imgmenor">
+                        <p>A ordem das conexões fica ao seu critério, podendo adaptar de acordo com a simulação a ser
+                            realizada ou a instalação do CLP.</p>
+                        <img src="arquivos/ligacaoterminada.png" class="imgmenor">
+                        <button class="ante ant3">Voltar</button>
+                    </div>
+                    <div class="personalizacaoao">
+                        <div class="personalizar">
+                            <span class="con">Configurar Simulação</span>
+                            <button class="persoexer">Personalizar Simulação</button>
+                            <button class="excluir excexer">Excluir Simulações</button>
+                            <button class="voltper">Voltar</button>
+                        </div>
+
+                        <div class="personalizado">
+
+                            <div class="atalho ap1">
+                                <p class="persop pp1"></p>
+                                <button class="simular sp1">Simular</button>
+                                <p class="contagem cp1">0</p>
+                            </div>
+                            <div class="atalho p1">
+                                <p class="subti resulta">Resultado:</p>
+                                <p class="subti resultado" id="rp1">Simulando</p>
+                                <div class="loading" id="lp1"></div>
+                                <button class="voltarava" id="vrp1">Voltar</button>
+                            </div>
+
+                            <div class="atalho ap2">
+                                <p class="persop pp2"></p>
+                                <button class="simular sp2">Simular</button>
+                                <p class="contagem cp2">0</p>
+                            </div>
+                            <div class="atalho p2">
+                                <p class="subti resulta">Resultado:</p>
+                                <p class="subti resultado" id="rp2">Simulando</p>
+                                <div class="loading" id="lp2"></div>
+                                <button class="voltarava" id="vrp2">Voltar</button>
+                            </div>
+
+                            <div class="atalho ap3">
+                                <p class="persop pp3"></p>
+                                <button class="simular sp3">Simular</button>
+                                <p class="contagem cp3">0</p>
+                            </div>
+                            <div class="atalho p3">
+                                <p class="subti resulta">Resultado:</p>
+                                <p class="subti resultado" id="rp3">Simulando</p>
+                                <div class="loading" id="lp3"></div>
+                                <button class="voltarava" id="vrp3">Voltar</button>
+                            </div>
+
+                            <div class="atalho ult ap4">
+                                <p class="persop pp4"></p>
+                                <button class="simular sp4">Simular</button>
+                                <p class="contagem cp4">0</p>
+                            </div>
+                            <div class="atalho p4">
+                                <p class="subti resulta">Resultado:</p>
+                                <p class="subti resultado" id="rp4">Simulando</p>
+                                <div class="loading" id="lp4"></div>
+                                <button class="voltarava" id="vrp4">Voltar</button>
+                            </div>
+                            <p class="parece">Parece que você ainda não personalizou nenhuma simulação...</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- -------------------- Ambiente de personalização ----------------------- -->
+
+            <div class="ambiente">
+
+                <div class="funcoes">
+                    <span class="funtitle">Funções</span>
+                    <ul class="listaf">
+                        <li><button class="funcao" id="logpere">Lógica E</button></li>
+                        <li><button class="funcao" id="logperou">Lógica OU</button></li>
+                        <li><button class="funcao" id="logpert">Temporizar</button></li>
+                        <li><button class="funcao" id="logperc">Contar</button></li>
+                    </ul>
+                    <button class="compilar">Compilar</button>
+                    <button class="tirarblock">Excluir Blocos</button>
+                    <button class="atualizar">Atualizar Firmware</button>
+                    <div class="codediv">
+                        <span class="codep">Código da Simulação</span>
+                        <input type="text" placeholder="Código" class="code" id="criar">
+                    </div>
+                </div>
+
+                <div class="personalizando">
+                    <div class="att">
+                        <span class="con">Atualizar Firmware</span>
+                        <input type="file" class="firmware" accept=".bin">
+                        <!-- <progress value="0" class="prog" max="100"></progress> -->
+                        <div class="divbots">
+                            <button class="enviar">Enviar</button>
+                            <button class="resetar">Resetar</button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="logicae">
+                <div class="perexc"> 
+                    <span class="logtitle">Lógica E</span>
+                    <button class="excper">X</button>
+                </div>
+                <div class="inouts">
+                    <div class="inputs">
+                        <button class="mais">+</button>
+                        <input type="text" placeholder="In" class="input">
+                        <input type="text" placeholder="Nível" class="input">
+                        <span class="right">-></span>
+                    </div>
+                    <div class="outputs">
+                        <span class="igual">=</span>
+                        <input type="text" placeholder="Out" class="output">
+                        <input type="text" placeholder="Nível" class="output">
+                        <button class="mais">+</button>
+                    </div>
+                </div>
+                <span class="baixo">||</span>
+            </div> -->
+
+                    <!-- <div class="logicaou">
+                <div class="perexc">
+                    <span class="logtitle">Lógica OU</span>
+                </div>
+                <div class="inouts">
+                    <div class="inputs">
+                        <input type="text" placeholder="In" class="input">
+                        <input type="text" placeholder="Nível" class="input">
+                        <button class="mais">+</button>
+                    </div>
+                    <div class="outputs">
+                        <span class="igual">=</span>
+                        <input type="text" placeholder="Out" class="output">
+                        <input type="text" placeholder="Nível" class="output">
+                        <button class="mais">+</button>
+                    </div>
+                </div>
+                <span class="baixo">||</span>
+            </div> -->
+
+                    <!-- <div class="temporizar">
+                <div class="perexc"> 
+                    <span class="logtitle">Temporizar</span>
+                </div>
+                <div class="inouts">
+                    <input type="text" placeholder="In" class="output">
+                    <input type="text" placeholder="Nível" class="output">
+                    <input type="text" placeholder="Tempo" class="tempo">
+                </div>
+                <span class="baixo">||</span>
+            </div> -->
+
+                    <!-- <div class="contar">
+                <div class="perexc"> 
+                    <span class="logtitle">Contar</span>
+                </div>
+                <div class="inouts">
+                    <input type="text" placeholder="In" class="output">
+                    <input type="text" placeholder="Nível" class="output">
+                    <input type="text" placeholder="Vezes" class="vezes">
+                </div>
+                <span class="baixo">||</span>
+            </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <script src="js/main.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+        <script>
+            var anonima_config = (function () {
+
+                var firebaseConfig = {
+
+                    // apiKey: "AIzaSyCou9SPUIR2UT_e9HKk9bujT0-0FqY4Y-w",
+                    // authDomain: "ssai-71c63.firebaseapp.com",
+                    // databaseURL: "https://ssai-71c63-default-rtdb.firebaseio.com",
+                    // projectId: "ssai-71c63",
+                    // storageBucket: "ssai-71c63.appspot.com",
+                    // messagingSenderId: "62178739873",
+                    // appId: "1:62178739873:web:1c89e88b09ab5c7365d2e0",
+                    // measurementId: "G-XY2SG916CM"
+
+                    apiKey: "AIzaSyCiuRJLAny0htJCQPEW4VF4RAySLxZrNz0",
+                    authDomain: "ssai-d7259.firebaseapp.com",
+                    databaseURL: "https://ssai-d7259-default-rtdb.firebaseio.com/",
+                    projectId: "ssai-d7259",
+                    storageBucket: "ssai-d7259.appspot.com",
+                    messagingSenderId: "181678292863",
+                    appId: "1:181678292863:web:541680c0d141214a31644a",
+                    measurementId: "G-ZL7SZVKKBM"
+                };
+
+                firebase.initializeApp(firebaseConfig);
+
+            })
+
+            anonima_config();
+
+        </script>
+    </body>
+</hmtl>

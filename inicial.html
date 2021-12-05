@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<hmtl lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <title>Início - SSAI</title>
+        <meta name="viewport" content="width = device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/4a2bd376bd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/inicial.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+
+    </head>
+
+    <body>
+        <div class="inicio">
+            <nav class="menu">
+                <p class="ssai">SSAI</p>
+                <ul class="ul">
+                    <li><a href="#caracteristicas" class="btn">Características</a></li>
+                    <li><a href="#componentes" class="btn">Componentes</a></li>
+                    <li><a href="#projete" class="btn">Projete</a></li>
+                </ul>
+                <button class="iniciar">Entrar</button>
+            </nav>
+            <h1 class="titulo cima">Sistema de Simulação de </h1>
+            <h1 class="titulo"> Ambiente Industrial</h1>
+            <p class="exp">É um sistema que possui circuitos capazes de simular a
+                operação dos sensores mais comumente utilizados na indústria,
+                produzindo sinais discretos e analógicos, nos padrões de tensão e corrente,
+                que estimulam as entradas do CLP e suas "respostas" são analisadas por outro circuito.
+                Assim, é possível verificar se seu comportamento em determinado cenário está correto ou não.
+            </p>
+            <button class="entender">Ver Explicação</button>
+        </div>
+
+        <div class="caracteristicas" id="caracteristicas">
+            <p class="caractitle">Características</p>
+            <div class="subline"></div>
+            <div class="row">
+                <div class="carac">
+                    <i class="fa fa-desktop"></i>
+                    <h4>Autônomo</h4>
+                    <p class="carcp">Verifica as saídas do CLP,
+                        gera uma avaliação e a envia a plataforma
+                        virtual sem precisar de intervenção.</p>
+                </div>
+                <div class="carac">
+                    <i class="fa fa-check-circle"></i>
+                    <h4>Seguro</h4>
+                    <p class="carcp">A correção feita
+                        manualmente é sujeita a erros, já o SSAI a faz de
+                        forma automática, a tornando mais segura.</p>
+                </div>
+                <div class="carac">
+                    <i class="fa fa-pencil"></i>
+                    <h4>Muitas Possilidades</h4>
+                    <p class="carcp">É um sistema com exercícios de nível básico, médio
+                        ou avançado,
+                        contendo mais opções de aprendizado.</p>
+                </div>
+                <div class="carac">
+                    <i class="fas fa-money-bill-wave"></i></i>
+                    <h4>Menor Custo</h4>
+                    <p class="carcp">O custo de abtenção do produto é muito reduzido quando comparado ao da montagem de
+                        uma bancada didática.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clp">
+            <div class="divimage">
+                <img class="clpimage" src="arquivos/clp.png">
+            </div>
+            <div class="expclp">
+                <div class="divexpclp">
+                    <div class="rocket"><i class="fa fa-rocket"></i></div>
+                    <div class="expclppp">
+                        <h3 class="titleclp">O que é um CLP?</h3>
+                        <p class="expclpp">O Controlador Lógico Programável (CLP) é o "cérebro" dos sistemas de
+                            automação
+                            industrial, ou seja, ele é responsável pelo controle de todo o processo envolvido
+                            na realização de alguma tarefa na indústria. Instituições com cursos baseados em
+                            Automação Industrial ensinam aos seu alunos como manipulá-lo e programá-lo corretamente.
+                        </p>
+                    </div>
+                </div>
+                <div class="divexpclp">
+                    <div class="rocket"><i class="fa fa-rocket"></i></div>
+                    <div class="expclppp">
+                        <h3 class="titleclp">Como funciona?</h3>
+                        <p class="expclpp">O CLP lê sinais elétricos em suas entradas provenientes de sensores ou outros
+                            dispositivos como botões, por exemplo, e com base em uma programação na linguagem
+                            "Ladder" gravada em sua memória, ele envia sinais elétricos de resposta através
+                            de suas saídas, comandando os chamados "atuadores", que podem ser motores, válvulas e
+                            etc.</p>
+                        <a href="https://www.youtube.com/watch?v=rqHlzFZcDNs" class="expclpp">Clique aqui para saber
+                            mais!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="componentes" id="componentes">
+            <p class="caractitle">Componentes</p>
+            <div class="subline"></div>
+
+            <div class="compcima">
+                <div class="comp grey">
+                    <i class="fa fa-plane d"></i>
+                    <h4 class="comptitle">Microcontrolador</h4>
+                    <p class="compp"> O microcontrolador utilizado é o ESP-32, que comanda todas as funções necessárias
+                        para que o projeto funcione corretamente.
+                    </p>
+                </div>
+                <div class="comp">
+                    <i class="fa fa-cogs d"></i>
+                    <h4 class="comptitle">Circuitos Geradores de Sinais</h4>
+                    <p class="compp">São circuitos projetados por nós
+                        com o intuito de reproduzir os sinais dos sensores mais comumente utilizados
+                        na indústria.
+                    </p>
+                </div>
+                <div class="comp grey">
+                    <i class="fa fa-wifi d"></i>
+                    <h4 class="comptitle">Módulo Wifi</h4>
+                    <p class="compp">É um módulo que permite a comunicação do hardware com a plataforma virtual.
+                        Nosso microcontrolador possui um exemplar integrado.
+                    </p>
+                </div>
+            </div>
+
+            <div class="compbaixo">
+                <div class="comp">
+                    <i class="fa fa-download d"></i>
+                    <h4 class="comptitle">Firmware</h4>
+                    <p class="compp">É um código de programação gravado no microcontrolador
+                        com que, baseado nele, o ESP-32 controla os processos.
+                    </p>
+                </div>
+                <div class="comp grey">
+                    <i class="fa fa-laptop d"></i>
+                    <h4 class="comptitle">Plataforma Virtual</h4>
+                    <p class="compp">É um site onde é definido o nível e qual exercício será
+                        reproduzido e exibe o resultado da avaliação feita e enviada pelo hardware.
+                    </p>
+                </div>
+                <div class="comp">
+                    <i class="fa fa-database d"></i>
+                    <h4 class="comptitle">Banco de Dados</h4>
+                    <p class="compp">O Banco de Dados usado para armazenar todos os dados enviados
+                        pelo hardware e as informações
+                        de login e senha dos usuários é o Firebase.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------- SEGUNDA "RESPONSIVO" -->
+
+        <div class="componentes2" id="componentes2">
+            <p class="caractitle">Componentes</p>
+            <div class="subline"></div>
+
+            <div class="compcima">
+                <div class="comp grey">
+                    <i class="fa fa-plane d"></i>
+                    <h4 class="comptitle">Microcontrolador</h4>
+                    <p class="compp"> O microcontrolador utilizado é o ESP-32, que comanda todas as funções necessárias
+                        para que o projeto funcione corretamente.
+                    </p>
+                </div>
+                <div class="comp">
+                    <i class="fa fa-cogs d"></i>
+                    <h4 class="comptitle">Circuitos Geradores de Sinais</h4>
+                    <p class="compp">São circuitos projetados por nós
+                        com o intuito de reproduzir os sinais dos sensores mais comumente utilizados
+                        na indústria.
+                    </p>
+                </div>
+            </div>
+            <div class="compmeio">
+                <div class="comp grey">
+                    <i class="fa fa-wifi d"></i>
+                    <h4 class="comptitle">Módulo Wifi</h4>
+                    <p class="compp">É um módulo que permite a comunicação do hardware com a plataforma virtual.
+                        Nosso microcontrolador possui um exemplar integrado.
+                    </p>
+                </div>
+                <div class="comp">
+                    <i class="fa fa-download d"></i>
+                    <h4 class="comptitle">Firmware</h4>
+                    <p class="compp">É um código de programação gravado no microcontrolador
+                        com que, baseado nele, o ESP-32 controla os processos.
+                    </p>
+                </div>
+            </div>
+            <div class="compbaixo">
+                <div class="comp grey">
+                    <i class="fa fa-laptop d"></i>
+                    <h4 class="comptitle">Plataforma Virtual</h4>
+                    <p class="compp">É um site onde é definido o nível e qual exercício será
+                        reproduzido e exibe o resultado da avaliação feita e enviada pelo hardware.
+                    </p>
+                </div>
+                <div class="comp">
+                    <i class="fa fa-database d"></i>
+                    <h4 class="comptitle">Banco de Dados</h4>
+                    <p class="compp">O Banco de Dados usado para armazenar todos os dados enviados
+                        pelo hardware e as informações
+                        de login e senha dos usuários é o Firebase.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------- SEGUNDA "RESPONSIVO" -->
+
+        <div class="projete" id="projete">
+            <p class="caractitle titlewhite">Projete</p>
+            <div class="subline white"></div>
+
+            <div class="videopro">
+                <p class="propcima">O SSAI foi desenvolvido com o propósito de ser apresentado na
+                    Feira de Projetos Tecnológicos - Projete, realizada anualmente pela
+                    Escola Técnica de Eletrônica Francisco Moreira da Costa - ETE FMC, que é fundamental
+                    na formação dos alunos pois estimula: a autonomia, o trabalho em equipe, o pensar
+                    na sociedade desenvolvendo projetos que atendam as necessidades humanas/ambientais.
+                </p>
+                <p class="propbaixo">Confira o que aconteceu na edição de 2019!</p>
+
+                <iframe class="projetev" src="https://www.youtube.com/embed/AMaQx5KVans" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <img class="logoete" src="arquivos/logoete.png">
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var iniciar = document.querySelector('.iniciar');
+
+            iniciar.addEventListener("click", function () {
+
+                window.location.href = "https://ssai-d7259.web.app/login.html";
+            })
+
+            var botao = document.querySelector('.entender');
+            var controle = 0;
+
+            botao.addEventListener("click", function () {
+
+                if (controle == 0) {
+                    document.querySelector('.exp').style.display = 'block';
+                    document.querySelector('.entender').textContent = 'Fechar Explicação';
+                    controle = 1;
+                } 
+                else {
+                     document.querySelector('.exp').style.display = 'none';
+                     document.querySelector('.entender').textContent = 'Ver Explicação';
+                     controle = 0;
+                }
+            })
+            
+        </script>
+    </body>
+</hmtl>

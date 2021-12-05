@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<hmtl lang="pt-br">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<title>Login SSAI</title>
+		<link rel="stylesheet" href="css/login.css">
+		<script src="https://kit.fontawesome.com/4a2bd376bd.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+
+	</head>
+
+	<body>
+		<div class="login">
+			<div class="container">
+				<div class="bloco bloco1">
+					<div class="coluna1">
+						<h2 class="titulo bem">Bem Vindo de Volta!</h2>
+						<p class="descricao descricao1 se">Se mantenha conectado conosco!</p>
+						<p class="descricao descricao1">Faça o Login com seu email e sua senha!</p>
+						<button id="signin" class="btn img2">Entrar</button>
+					</div> <!-- coluna1 -->
+					<div class="coluna2">
+						<h2 class="titulo crie">Crie uma Conta!</h2>
+						<!-- <p class="descricao descricao2">Um confirmação será enviada ao seu email!</p> -->
+						<form class="form">
+							<label for="" class="label">
+								<i class="far fa-user icone"></i>
+								<input type="text" placeholder="Nome" class="caixa" id="nome">
+							</label>
+							<label for="" class="label">
+								<i class="far fa-envelope icone"></i>
+								<input type="email" placeholder="Email" class="caixa" id="emailre">
+							</label>
+							<label for="" class="label">
+								<i class="fas fa-lock icone"></i>
+								<input type="password" placeholder="Senha" class="caixa" id="passwordre">
+							</label>
+						</form> <!-- form -->
+						<button class="btn img1 margin" id="registrar">Registrar</button>
+					</div> <!-- coluna2 -->
+				</div> <!-- bloco1 -->
+
+				<div class="bloco bloco2">
+					<div class="coluna1">
+						<h2 class="titulo ola">Olá, Amigo!</h2>
+						<p class="descricao descricao1">Insira seus dados pessoais!</p>
+						<p class="descricao descricao1">Comece a utilizar imediatamente!</p>
+						<button id="signup" class="btn img2">Registrar</button>
+					</div> <!-- coluna1 -->
+					<div class="coluna2">
+						<h2 class="titulo">Acesse o Site!</h2>
+						<p class="descricao">Use sua conta de email!</p>
+						<form class="form">
+							<label for="" class="label">
+								<i class="far fa-envelope icone"></i>
+								<input type="email" placeholder="Email" class="caixa" id="emailen">
+							</label>
+							<label for="" class="label">
+								<i class="fas fa-lock icone"></i>
+								<input type="password" placeholder="Senha" class="caixa" id="passworden">
+							</label>
+						</form>
+						<!-- <button class="fyps">Esqueci minha senha!</button> -->
+						<button class="btn img1" id="entrar">Entrar</button>
+					</div> <!-- coluna2 -->
+				</div> <!-- bloco2 -->
+			</div> <!-- container -->
+		</div>
+
+		<script src="js/login.js"></script>
+
+		<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+		<script>
+			var anonima_config = (function () {
+
+				var firebaseConfig = {
+
+					apiKey: "AIzaSyCou9SPUIR2UT_e9HKk9bujT0-0FqY4Y-w",
+					authDomain: "ssai-71c63.firebaseapp.com",
+					databaseURL: "https://ssai-71c63-default-rtdb.firebaseio.com",
+					projectId: "ssai-71c63",
+					storageBucket: "ssai-71c63.appspot.com",
+					messagingSenderId: "62178739873",
+					appId: "1:62178739873:web:1c89e88b09ab5c7365d2e0",
+					measurementId: "G-XY2SG916CM"
+
+					// apiKey: "AIzaSyCiuRJLAny0htJCQPEW4VF4RAySLxZrNz0",
+					// authDomain: "ssai-d7259.firebaseapp.com",
+					// databaseURL: "https://ssai-d7259-default-rtdb.firebaseio.com/",
+					// projectId: "ssai-d7259",
+					// storageBucket: "ssai-d7259.appspot.com",
+					// messagingSenderId: "181678292863",
+					// appId: "1:181678292863:web:541680c0d141214a31644a",
+					// measurementId: "G-ZL7SZVKKBM"
+				};
+
+				firebase.initializeApp(firebaseConfig);
+			})
+
+			anonima_config();
+
+			firebase.analytics();
+
+			//-------------------- PERSISTENCIA DO LOGIN ----
+			// var usuario;
+
+			// firebase.auth().onAuthStateChanged((val) => {
+
+			// 	if (val) {
+
+			// 		usuario = val;
+			// 		alert('Bem vindo de volta!');
+			// 	}
+			// })
+
+			//----------------- FIM PERSISTENCIA ----
+		</script>
+
+	</body>
+</hmtl>
