@@ -6,4 +6,6 @@ O SSAI foi desenvolvido a fim de automatizar e aumentar a precisão da verifica�
 
 Apresentação do Projeto: https://www.youtube.com/watch?v=8DauRR1YuGM&t=1478s (Min -> __18:10__).
 
+<a href= "https://www.youtube.com/watch?v=8DauRR1YuGM&t=1478s">Clique aqui para ver a Apresentação do Projeto</a>
+
 Site: https://ssai-d7259.web.app/inicial.html
