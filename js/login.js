@@ -40,7 +40,7 @@ en.addEventListener("click", function(){
 
     var user = userCredential.user;
     
-    window.location.href = "https://ssai-d7259.web.app/main.html";
+    window.location.href = "https://ssai-71c63.web.app/main.html";
 
     })
     .catch((error) => {
@@ -97,7 +97,7 @@ re.addEventListener("click", function(){
     .then((userCredential) => {
 
       var user = userCredential.user;
-      window.location.href = "https://ssai-d7259.web.app/main.html";
+      window.location.href = "https://ssai-71c63.web.app/main.html";
       alert('Usuário registrado com sucesso!');
 
     })
