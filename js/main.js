@@ -403,7 +403,7 @@ sair.addEventListener("click", function () {
     if (controle == 0) {
         firebase.auth().signOut().then(() => {
 
-            window.location.href = "https://ssai-d7259.web.app/inicial.html";
+            window.location.href = "https://ssai-71c63.web.app/inicial.html";
 
         }).catch(() => {
 
