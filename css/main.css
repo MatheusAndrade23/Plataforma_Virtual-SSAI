@@ -340,12 +340,11 @@ main {
     color: #3d3d3d;
 }
 
-.help {
+.painel {
 
     margin-top: 23px;
-    margin-left: 20px;
     border-radius: 10px;
-    width: calc(100% - 200px);
+    width: calc(100% - 204px);
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -354,7 +353,7 @@ main {
 .painel {
 
     display: none;
-    width: calc(100% - 200px);
+    width: calc(100% - 204px);
 }
 
 .help1s,
@@ -471,7 +470,6 @@ main {
     width: 265px;
     min-width: 200px;
     height: 400px;
-    display: flex;
     flex-direction: column;
     display: none;
 }
@@ -587,7 +585,6 @@ main {
     display: flex;
     justify-content: space-around;
     max-height: 200px;
-    width: 100%;
 }
 
 .tlinha {

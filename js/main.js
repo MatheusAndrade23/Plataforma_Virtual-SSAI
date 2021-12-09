@@ -43,6 +43,7 @@ e.addEventListener("click", function () {
     // document.querySelector('.config').style.display = "none";
     document.querySelector('.personalizar').style.display = "none";
     document.querySelector('.personalizado').style.display = "none";
+    document.querySelector('.personalizacaoao').style.display = "none";
 
     document.querySelector('.help1s').style.display = "none";
     document.querySelector('.help2s').style.display = "none";
@@ -74,6 +75,7 @@ latch.addEventListener("click", function () {
     // document.querySelector('.config').style.display = "none";
     document.querySelector('.personalizar').style.display = "none";
     document.querySelector('.personalizado').style.display = "none";
+    document.querySelector('.personalizacaoao').style.display = "none";
 
     document.querySelector('.help1s').style.display = "none";
     document.querySelector('.help2s').style.display = "none";
@@ -107,6 +109,7 @@ temp.addEventListener("click", function () {
     // document.querySelector('.config').style.display = "none";
     document.querySelector('.personalizar').style.display = "none";
     document.querySelector('.personalizado').style.display = "none";
+    document.querySelector('.personalizacaoao').style.display = "none";
 
     document.querySelector('.help1s').style.display = "none";
     document.querySelector('.help2s').style.display = "none";
@@ -138,6 +141,7 @@ cont.addEventListener("click", function () {
     // document.querySelector('.config').style.display = "none";
     document.querySelector('.personalizar').style.display = "none";
     document.querySelector('.personalizado').style.display = "none";
+    document.querySelector('.personalizacaoao').style.display = "none";
 
     document.querySelector('.help1s').style.display = "none";
     document.querySelector('.help2s').style.display = "none";
@@ -170,6 +174,7 @@ vari.addEventListener("click", function () {
     // document.querySelector('.config').style.display = "none";
     document.querySelector('.personalizar').style.display = "none";
     document.querySelector('.personalizado').style.display = "none";
+    document.querySelector('.personalizacaoao').style.display = "none";
 
     document.querySelector('.help1s').style.display = "none";
     document.querySelector('.help2s').style.display = "none";
