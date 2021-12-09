@@ -88,7 +88,7 @@ _Assim, uma janela aparecerá e te dará a opção de baixar como pdf ou imprimi
 
 ##
 
-#### **_Mas essas funcionalidades descritas acima são apenas as básicas. Para acessar as instruções das funcionalidades mais complexas bem como as que envolvem o hardware, abra o "Painel de Ajuda" presente na página principal, como já instruído anteriormente._**
+#### **_Mas, vale lembrar que essas funcionalidades descritas acima são apenas as básicas. Para acessar as instruções das funcionalidades mais complexas bem como as que envolvem o hardware, abra o "Painel de Ajuda" presente na página principal, como já instruído anteriormente._**
 
 <img src="https://user-images.githubusercontent.com/84635540/145472439-1ed4f257-d42d-41c3-be88-1ed4912112d3.png" width="700px">
 
