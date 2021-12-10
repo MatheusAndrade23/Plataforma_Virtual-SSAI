@@ -1,8 +1,10 @@
 <h1 id="introducao">Plataforma Virtual - Projeto SSAI</h1>
  
-#### Repositório do site do projeto Sistema de Simulação de Ambiente Industrial - SSAI desenvolvido em 2021 para a 41° edição da __PROJETE__, feira de projetos eletrônicos acadêmicos da <a href= "https://www.etefmc.com.br/">Escola Técnica de Eletrônica Francisco Moreira da Costa - ETE FMC. </a>
+#### _Repositório do site do projeto Sistema de Simulação de Ambiente Industrial - SSAI desenvolvido em 2021 para a 41° edição da __PROJETE__, feira de projetos eletrônicos acadêmicos da <a href= "https://www.etefmc.com.br/">Escola Técnica de Eletrônica Francisco Moreira da Costa - ETE FMC. </a>_
 
-O __SSAI__ é um sistema composto por um hardware e um site, capaz de verificar o funcionamento de lógicas de programação de <a href= "https://www.youtube.com/watch?v=rqHlzFZcDNs">CLPs</a>, a fim de automatizar e melhor a precisão deste processo, que, até então, teria que ser feito manualmente. O sistema foi idealizado para atender esta demanda dentro de ambiente acadêmico, conferindo as lógicas feitas por um aluno enquanto aprende a <a href= "https://www.youtube.com/watch?v=wYy80Vxg4rM">linguagem Ladder</a>, por exemplo, mas também pode ser usado para verificar as lógicas que serão utilizadas dentro de ambiente industrial.
+O __SSAI__ é um sistema composto por um hardware e um site, capaz de verificar o funcionamento de lógicas de programação de <a href= "https://www.youtube.com/watch?v=rqHlzFZcDNs">CLPs</a>, a fim de automatizar e melhor a precisão deste processo, que, até então, teria que ser feito manualmente. O sistema foi idealizado para atender esta demanda dentro de ambiente acadêmico, conferindo as lógicas feitas por um aluno enquanto aprende a <a href= "https://www.youtube.com/watch?v=wYy80Vxg4rM">linguagem Ladder</a>, por exemplo, mas também pode ser usado para verificar as lógicas que serão utilizadas dentro de ambiente industrial. 
+
+O sistema reproduz os sinais dos sensores mais comumente na indústria, tanto os discretos (24Vdc) quanto os analógicos (0 a 10Vdc e 4 a 20mA) que estimulam o CLP, cujos sinais de resposta são analisados por outro circuito. Assim, é possível verificar se seu comportamento em determinado cenário está correto. Além disso, visando a facilidade, existem 25 simulações pré-programadas bem como seus respectivos enunciados, para que um professor da área que utilize o produto possa aplicá-las aos alunos como exercícios. Mas, também, a personalização de uma simulação é possível, dando ao usuário a possibilidade de adequar o uso do produto à sua realidade.
 
 <br>
 
@@ -12,6 +14,10 @@ __Desenvolvedores:__
  * Matheus Dionísio Teixeira Andrade
  * Rafael Areias Silveira
  * Virgínia Maria Santos de Oliveira
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/84635540/145497827-bd54f27c-4eff-4599-a469-caf189b85fc1.jpeg" width="550px">
 
 <br>
 
