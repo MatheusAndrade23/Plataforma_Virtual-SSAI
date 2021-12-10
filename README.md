@@ -1,4 +1,4 @@
-# Plataforma Virtual - Projeto SSAI
+<h1 id="introducao">Plataforma Virtual - Projeto SSAI</h1>
  
 #### Repositório do site do projeto Sistema de Simulação de Ambiente Industrial - SSAI desenvolvido em 2021 para a 41° edição da __PROJETE__, feira de projetos eletrônicos acadêmicos da <a href= "https://www.etefmc.com.br/">Escola Técnica de Eletrônica Francisco Moreira da Costa - ETE FMC. </a>
 
@@ -21,7 +21,18 @@ __Desenvolvedores:__
 
 <br>
 
-## Como utilizar as funções básicas:
+## Menu de Navegação
+
+* <a href= "#introducao">Introdução</a>
+* <a href= "#instrucao">Como utilizar as funcionalidades básicas</a>
+  * <a href= "#instrucao1">Chegar na página principal</a>
+  * <a href= "#instrucao2">Executar uma simulação pré-definida</a>
+  * <a href= "#instrucao3">Ver (e baixar) o histórico das simulações e baixar os enunciados pré-definidos</a>
+* <a href= "#agradecimento">Agradecimento</a>
+
+<br>
+
+<h2 id="instrucao">Como utilizar as funcionalidades básicas:</h2>
 
 _É claro que, para utilizar o site para que o que ele foi feito, um exemplar do hardware se faz necessário! Porém, o site hosteado simula as ações do hardware para que qualquer um consiga experimentar todas as suas possibilidades!_
 
@@ -33,8 +44,7 @@ _É claro que, para utilizar o site para que o que ele foi feito, um exemplar do
 
 ##
 
-### 1 - Para chegar na página principal
- 
+<h3 id="instrucao1">1 - Para chegar na página principal</h3>
  * Eentre na página inicial e clique em "Entrar"!
  * Chegando na tela de login, crie uma conta, ou se já tiver, faça o login!
 
@@ -48,7 +58,7 @@ _É claro que, para utilizar o site para que o que ele foi feito, um exemplar do
 
 <br>
 
-### 2 - Para executar uma simulação pré-definida
+<h3 id="instrucao2">2 - Para executar uma simulação pré-definida</h3>
 
  * Escolha o assunto da simulação!
 
@@ -68,7 +78,7 @@ _Posteriormente, quando o resultado for recebido, ele aparecerá e substituirá 
 
 <br>
 
-### 3 - Para ver (e baixar) o histórico das simulações e baixar os enunciados pré-definidos
+<h3 id="instrucao3">3 - Para ver (e baixar) o histórico das simulações e baixar os enunciados pré-definidos</h3>
 
  * Um histórico das simulações executadas desde o início página é disponibilizado, contendo o assunto, nível e resultado de cada uma delas. Para acessá-lo, clique em "Histórico"!
 
@@ -96,12 +106,11 @@ _Assim, uma janela aparecerá e te dará a opção de baixar como pdf ou imprimi
 
 <br>
 
-## Agradecimento:
+<h2 id="agradecimento">Agradecimento:</h2>
 
 Dedico este agradecimento ao Professor Humberto (Nosso orientador), à Professora Bruna, à  Professora Ana Letícia e Igor por toda a ajuda, feedbacks e orientações recebidas durante todo o desenvolvimento do projeto, que foi fundamental para a sua conclusão com êxito.
 
 Além disso, agradeço à coordenação da PROJETE pela premiação que minha equipe recebeu, com nosso projeto sendo eleito o melhor da categoria de Tecnologia Educacional.
 
-<br>
 
 ### *__E também agradeço à você pela atenção!__*
