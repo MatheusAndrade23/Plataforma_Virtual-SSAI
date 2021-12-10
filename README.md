@@ -51,7 +51,8 @@ _É claro que, para utilizar o site para que o que ele foi feito, um exemplar do
 ##
 
 <h3 id="instrucao1">1 - Para chegar na página principal</h3>
- * Eentre na página inicial e clique em "Entrar"!
+
+ * Entre na página inicial e clique em "Entrar"!
  * Chegando na tela de login, crie uma conta, ou se já tiver, faça o login!
 
 <br>
