@@ -117,7 +117,7 @@ _Assim, uma janela aparecerá e te dará a opção de baixar como pdf ou imprimi
 
 Dedico este agradecimento ao Professor Humberto (Nosso orientador), à Professora Bruna, à  Professora Ana Letícia e Igor por toda a ajuda, feedbacks e orientações recebidas durante todo o desenvolvimento do projeto, que foi fundamental para a sua conclusão com êxito.
 
-Além disso, agradeço à coordenação da PROJETE pela premiação que minha equipe recebeu, com nosso projeto sendo eleito o melhor da categoria de Tecnologia Educacional.
+Além disso, agradeço à coordenação da PROJETE pela premiação que minha equipe recebeu, com nosso projeto sendo eleito o melhor da categoria "Tecnologia Educacional".
 
 
 ### *__E também agradeço à você pela atenção!__*
