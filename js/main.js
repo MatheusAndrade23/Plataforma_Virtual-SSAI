@@ -1299,7 +1299,7 @@ var clicar_botao = function () {
 
     var timer = setInterval(tempo, 1000);
 
-    function tempo() {
+    function tempo() { 
 
         intervalo = intervalo + 1;
 
@@ -1309,7 +1309,7 @@ var clicar_botao = function () {
 
             clearInterval(timer);
 
-            // firebase.database().ref().child('ESP32').child('CALLBACK').child('ESTADO').set(true);
+            firebase.database().ref().child('ESP32').child('CALLBACK').child('ESTADO').set(true);
 
             var estadoespsintax = firebase.database().ref().child('ESP32').child('CALLBACK').child('ESTADO');
 
@@ -1505,27 +1505,27 @@ var contarresult = 0;
 
 var anonima_avaliar = function () {
 
-    var detectarmudanca = firebase.database().ref().child('ESP32').child('RESULTADO');
+    // var detectarmudanca = firebase.database().ref().child('ESP32').child('RESULTADO');
 
-    detectarmudanca.on('value', (snapshot) => {
-        nota = 100 - snapshot.val();
+    // detectarmudanca.on('value', (snapshot) => {
+    //     nota = 100 - snapshot.val();
 
-        contarresult = contarresult + 1;
+    //     contarresult = contarresult + 1;
 
-        if (contarresult == 2) {
+    //     if (contarresult == 2) {
 
-            anonima_mostrarresultado();
+    //         anonima_mostrarresultado();
 
-        }
-    });
+    //     }
+    // });
 
-    // min = Math.ceil(0);
-    // max = Math.floor(100);
-    // nota = Math.floor(Math.random() * (max - min * + 1)) + min;
+    min = Math.ceil(0);
+    max = Math.floor(100);
+    nota = Math.floor(Math.random() * (max - min * + 1)) + min;
 
-    // alert('Para que você possa experimentar todas as funcionalidades da página mesmo se possuir um exemplar do produto, um resultado aleatório entre 0 e 100 será gerado!');
+    alert('Para que você possa experimentar todas as funcionalidades da página mesmo se possuir um exemplar do produto, um resultado aleatório entre 0 e 100 será gerado!');
 
-    // anonima_mostrarresultado();
+    anonima_mostrarresultado();
 }
 
 var notanterior;
