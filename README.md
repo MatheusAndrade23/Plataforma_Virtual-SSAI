@@ -10,10 +10,10 @@ O sistema reproduz os sinais dos sensores mais comumente na indústria, tanto os
 
 __Desenvolvedores:__
 
- * Christhian Salles Castilho
- * Matheus Dionísio Teixeira Andrade
- * Rafael Areias Silveira
- * Virgínia Maria Santos de Oliveira
+ * <a href="https://www.linkedin.com/in/christian-salles-castilho-784b061b4/">Christhian Salles Castilho</a>
+ * <a href="https://www.linkedin.com/in/matheus-andrade-478b04207/">Matheus Dionísio Teixeira Andrade</a>
+ * <a href="https://www.linkedin.com/in/rafael-areias-silveira-580930198/">Rafael Areias Silveira</a>
+ * <a href="https://www.linkedin.com/in/virginia-oliveira-34597a1bb/">Virgínia Maria Santos de Oliveira</a>
 
 <br>
 
