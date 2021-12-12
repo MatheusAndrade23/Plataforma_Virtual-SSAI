@@ -30,15 +30,30 @@ __Desenvolvedores:__
 ## Menu de Navegação
 
 * <a href= "#introducao">Introdução</a>
-* <a href= "#instrucao">Como utilizar as funcionalidades básicas</a>
-  * <a href= "#instrucao1">Chegar na página principal</a>
-  * <a href= "#instrucao2">Executar uma simulação pré-definida</a>
-  * <a href= "#instrucao3">Ver (e baixar) o histórico das simulações e baixar os enunciados pré-definidos</a>
+* <a href= "#tecnologias">Tecnologias Utilizadas</a>
+* <a href= "#instrucao">Como Utilizar as Funcionalidades Básicas</a>
+  * <a href= "#instrucao1">Chegar na Página Principal</a>
+  * <a href= "#instrucao2">Executar uma Simulação Pré-Definida</a>
+  * <a href= "#instrucao3">Ver (e baixar) o Histórico das Simulações e Baixar os Enunciados Pré-Definidos</a>
 * <a href= "#agradecimento">Agradecimento</a>
 
 <br>
 
-<h2 id="instrucao">Como utilizar as funcionalidades básicas:</h2>
+<h2 id="tecnologias">Tecnologias Utilizadas:</h2>
+ 
+ #### Linguagens: `HTML` , `CSS` e `JavaScript`!
+ 
+ #### Banco de Dados, Comunicação com o Hardware e Hospedagem: `Firebase`!
+ 
+ <div style="display: inline_block"><br>
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+ <img align="center" alt="C++" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg">
+ </div>
+<br>
+
+<h2 id="instrucao">Como Utilizar as Funcionalidades Básicas:</h2>
 
 _É claro que, para utilizar o site para que o que ele foi feito, um exemplar do hardware se faz necessário! Porém, o site hosteado simula as ações do hardware para que qualquer um consiga experimentar todas as suas possibilidades!_
 
@@ -50,9 +65,9 @@ _É claro que, para utilizar o site para que o que ele foi feito, um exemplar do
 
 ##
 
-<h3 id="instrucao1">1 - Para chegar na página principal</h3>
+<h3 id="instrucao1">1 - Para Chegar na Página Principal</h3>
 
- * Entre na página inicial e clique em "Entrar"!
+ * Entre na página inicial e clique em `Entrar`!
  * Chegando na tela de login, crie uma conta, ou se já tiver, faça o login!
 
 <br>
@@ -65,13 +80,13 @@ _É claro que, para utilizar o site para que o que ele foi feito, um exemplar do
 
 <br>
 
-<h3 id="instrucao2">2 - Para executar uma simulação pré-definida</h3>
+<h3 id="instrucao2">2 - Para Executar uma Simulação Pré-Definida</h3>
 
  * Escolha o assunto da simulação!
 
 <img src="https://user-images.githubusercontent.com/84635540/145467308-6dc2aba5-a10b-4369-8f48-945b29642219.png" width="700px">
 
- * Clique no botão "Simular" correspondente ao nível desejado!
+ * Clique no botão `Simular` correspondente ao nível desejado!
 
 <img src="https://user-images.githubusercontent.com/84635540/145467351-8c0225a0-7513-4513-a391-80b3061f67e6.png" width="700px">
 
@@ -85,9 +100,9 @@ _Posteriormente, quando o resultado for recebido, ele aparecerá e substituirá 
 
 <br>
 
-<h3 id="instrucao3">3 - Para ver (e baixar) o histórico das simulações e baixar os enunciados pré-definidos</h3>
+<h3 id="instrucao3">3 - Para ver (e baixar) o Histórico das Simulações e Baixar os Enunciados Pré-Definidos</h3>
 
- * Um histórico das simulações executadas desde o início página é disponibilizado, contendo o assunto, nível e resultado de cada uma delas. Para acessá-lo, clique em "Histórico"!
+ * Um histórico das simulações executadas desde o início página é disponibilizado, contendo o assunto, nível e resultado de cada uma delas. Para acessá-lo, clique em `Histórico`!
 
 <img src="https://user-images.githubusercontent.com/84635540/145468691-1f4c6f38-97dc-43f4-9ac6-9cedc2edb775.png" width="700px">
 
@@ -95,7 +110,7 @@ _Veja um exemplo de como cada execução é mostrada, usando uma simulação do 
 
 <img src="https://user-images.githubusercontent.com/84635540/145470639-23fb4588-2694-4e5e-b0d8-1a19bc282f67.png">
 
- * Para baixar o relatório, clique no botão "Relatório"!
+ * Para Baixar o Relatório, Clique no Botão `Relatório`!
  
 <img src="https://user-images.githubusercontent.com/84635540/145471128-da0894e4-dd96-4b8d-acbb-2ab34f7628eb.png" width="700px">
 
