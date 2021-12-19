@@ -8,7 +8,7 @@ O sistema reproduz os sinais dos sensores mais comumente na indústria, tanto os
 
 <br>
 
-__Desenvolvedores:__
+__Desenvolvedores do Projeto:__
 
  * <a href="https://www.linkedin.com/in/christian-salles-castilho-784b061b4/">Christhian Salles Castilho</a>
  * <a href="https://www.linkedin.com/in/matheus-andrade-478b04207/">Matheus Dionísio Teixeira Andrade</a>
