@@ -41,7 +41,7 @@ __Desenvolvedores do Projeto:__
 
 <h2 id="tecnologias">Tecnologias Utilizadas:</h2>
  
- #### Linguagens: `HTML` , `CSS` e `JavaScript`!
+ #### Linguagens: `HTML`, `CSS` e `JavaScript`!
  
  #### Banco de Dados, Comunicação com o Hardware e Hospedagem: `Firebase`!
  
