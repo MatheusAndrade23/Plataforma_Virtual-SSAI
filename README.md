@@ -53,10 +53,6 @@ __Desenvolvedores do Projeto:__
  </div>
  
  <br>
- 
- **_OBS: O site foi programado enquanto ainda durante meu início nos estudos, por isso o código não é maduro. Além disso, o uso de bibliotecas o otimizariam consideravelmente, uma vez que optei por usar JavaScript puro para aprender melhor._**
- 
-<br>
 
 <h2 id="instrucao">Como Utilizar as Funcionalidades Básicas:</h2>
 
