@@ -1,6 +1,6 @@
-<h1 id="introducao">Plataforma Virtual - Projeto SSAI</h1>
+<h1 id="introducao" align="center">Plataforma Virtual - Projeto SSAI</h1>
  
-#### _Repositório do site do projeto Sistema de Simulação de Ambiente Industrial - SSAI desenvolvido em 2021 para a 41° edição da __PROJETE__, feira de projetos eletrônicos acadêmicos da <a href= "https://www.etefmc.com.br/">Escola Técnica de Eletrônica Francisco Moreira da Costa - ETE FMC. </a>_
+### _Repositório do site do projeto Sistema de Simulação de Ambiente Industrial - SSAI desenvolvido em 2021 para a 41° edição da __PROJETE__, feira de projetos eletrônicos acadêmicos da <a href= "https://www.etefmc.com.br/">Escola Técnica de Eletrônica Francisco Moreira da Costa - ETE FMC. </a>_
 
 O __SSAI__ é um sistema composto por um hardware e um site, capaz de verificar o funcionamento de lógicas de programação de <a href= "https://www.youtube.com/watch?v=rqHlzFZcDNs">CLPs</a>, a fim de automatizar e melhor a precisão deste processo, que, até então, teria que ser feito manualmente. O sistema foi idealizado para atender esta demanda dentro de ambiente acadêmico, conferindo as lógicas feitas por um aluno enquanto aprende a <a href= "https://www.youtube.com/watch?v=wYy80Vxg4rM">linguagem Ladder</a>, por exemplo, mas também pode ser usado para verificar as lógicas que serão utilizadas dentro de ambiente industrial. 
 
