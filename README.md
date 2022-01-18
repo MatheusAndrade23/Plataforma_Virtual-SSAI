@@ -25,7 +25,7 @@ __Desenvolvedores do Projeto:__
 
 <a href= "https://ssai-71c63.web.app/inicial.html">Clique aqui para visitar o Site!</a>
 
-<br>
+---
 
 ## Menu de Navegação
 
@@ -37,7 +37,7 @@ __Desenvolvedores do Projeto:__
   * <a href= "#instrucao3">Ver (e baixar) o Histórico das Simulações e Baixar os Enunciados Pré-Definidos</a>
 * <a href= "#agradecimento">Agradecimento</a>
 
-<br>
+---
 
 <h2 id="tecnologias">Tecnologias Utilizadas:</h2>
  
@@ -52,7 +52,7 @@ __Desenvolvedores do Projeto:__
  <img align="center" alt="C++" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg">
  </div>
  
- <br>
+ ---
 
 <h2 id="instrucao">Como Utilizar as Funcionalidades Básicas:</h2>
 
@@ -127,7 +127,7 @@ _Assim, uma janela aparecerá e te dará a opção de baixar como pdf ou imprimi
 
 <img src="https://user-images.githubusercontent.com/84635540/145472439-1ed4f257-d42d-41c3-be88-1ed4912112d3.png" width="700px">
 
-<br>
+---
 
 <h2 id="agradecimento">Agradecimento:</h2>
 
